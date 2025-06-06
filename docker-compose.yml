@@ -4,7 +4,8 @@ services:
   web:
     image: php:8.2-apache
     volumes:
-      - ./:/var/www/html/
+      - ./test/:/var/www/html/
+      # - ./:/var/www/html/
     ports:
       - "80:80"
     depends_on:
