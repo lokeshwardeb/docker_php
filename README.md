@@ -44,3 +44,15 @@ node -v
 npm -v
 
 ```
+
+If you have any permission or storage permission issue, then run these commands into your docker container shell or bash access 
+
+### Fix any permission or storage permission issue :
+
+```bash
+
+chmod -R 775 storage bootstrap/cache
+chown -R www-data:www-data storage bootstrap/cache
+
+
+```
